@@ -1,0 +1,8 @@
+.gitignore
+node_modules
+.env
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+idea
+msdata/logs

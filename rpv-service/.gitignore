@@ -1,0 +1,7 @@
+.idea
+node_modules
+config/*
+!config/default.js
+logs
+msdata/temp
+msdata/logs

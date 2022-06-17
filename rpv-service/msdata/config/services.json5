@@ -1,0 +1,13 @@
+{
+    grs : {
+        url: "https://test-creditclaim:8443/client-api-service/ssm/findClientInfoFromSRS",
+    config : {
+        headers: { 'Content-Type': 'application/xml', 'Accept-Encoding' : 'gzip, deflate, br'},
+        proxy:false,
+        withCredentials: false,
+        responseType: 'application/xml',
+        'Connection':'keep-alive',
+        },
+    }
+
+}

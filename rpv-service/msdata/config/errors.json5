@@ -1,0 +1,274 @@
+{
+    // Язык по умолчанию. Работает без перезагрузки микросервиса.
+    userDefaultLang: 'ru',
+    
+    // Список ошибок и сообщений. Работает без перезагрузки микросервиса.
+    errors: {
+
+        'E_ServerError': {
+            ru: {
+                userMessage: "Ошибка сервера",
+                logMessage: "Общая / неопределенная ошибка сервера",
+            },
+            httpCode: 500
+        },
+
+        'E_NotFound': {
+            ru: {
+                userMessage: "Запрошенный ресурс не найден на сервере",
+                logMessage: "Запрошенный ресурс не найден на сервере",
+            },
+            httpCode: 404
+        },
+
+        'E_LockError': {
+            ru: {
+                userMessage: "Ошибка блокировки объекта",
+                logMessage: "Ошибка блокировки объекта",
+            },
+            httpCode: 500
+        },
+
+        'E_EventError': {
+            ru: {
+                userMessage: "Ошибка обработки событий",
+                logMessage: "Ошибка обработки событий",
+            },
+            httpCode: 500
+        },
+
+        'E_ModuleError': {
+            ru: {
+                userMessage: "Ошибка в динамическом модуле",
+                logMessage: "Общая / неопределенная ошибка в динамическом модуле",
+            },
+            httpCode: 500
+        },
+
+        'E_ConfigurationError': {
+            ru: {
+                userMessage: "Ошибка в конфигурации",
+                logMessage: "Общая / неопределенная ошибка в конфигурации",
+            },
+            httpCode: 500
+        },
+
+        'E_NotImplemented': {
+            ru: {
+                userMessage: "Функция не реализована",
+                logMessage: "Функция не реализована",
+            },
+            httpCode: 501
+        },
+
+        'E_FunctionNotFound': {
+            ru: {
+                userMessage: "Функция не найдена",
+                logMessage: "Функция не найдена",
+            },
+            httpCode: 404
+        },
+
+        'E_IncorrectParams': {
+            ru: {
+                userMessage: "Некорректные параметры",
+                logMessage: "Некорректные параметры для API или функции",
+            },
+            httpCode: 400
+        },
+
+        'E_UrlNotFound': {
+            ru: {
+                userMessage: "Объект не найден по URL",
+                logMessage: "Объект не найден по URL",
+            },
+            httpCode: 404
+        },
+
+        'E_TemplateError': {
+            ru: {
+                userMessage: "Ошибка при генерации шаблона",
+                logMessage: "Ошибка при генерации шаблона",
+            },
+            httpCode: 500
+        },
+
+        'E_SecretsError': {
+            ru: {
+                userMessage: "Ошибка хранилища секретов",
+                logMessage: "Ошибка хранилища секретов",
+            },
+            httpCode: 500
+        },
+
+        'E_DatabaseError': {
+            ru: {
+                userMessage: "Ошибка БД",
+                logMessage: "Ошибка БД",
+            },
+            httpCode: 500
+        },
+
+        'E_FunctionError': {
+            ru: {
+                userMessage: "Ошибка при вызове серверной функции",
+                logMessage: "Ошибка при вызове серверной функции",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidColumnType': {
+            ru: {
+                userMessage: "Неправильный тип колонки в таблице БД",
+                logMessage: "Неправильный тип колонки в таблице БД",
+            },
+            httpCode: 500
+        },
+
+        'E_UniqueIndexNotFound': {
+            ru: {
+                userMessage: "Отсутствует уникальный индекс",
+                logMessage: "Отсутствует уникальный индекс",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidColumnDefaultValue': {
+            ru: {
+                userMessage: "Неправильное значение по умолчанию у колонки",
+                logMessage: "Неправильное значение по умолчанию у колонки",
+            },
+            httpCode: 500
+        },
+        
+        'E_TriggerNotFound': {
+            ru: {
+                userMessage: "Триггер не найден",
+                logMessage: "Триггер не найден",
+            },
+            httpCode: 500
+        },
+
+        'E_IndexNotFound': {
+            ru: {
+                userMessage: "Индекс не найден",
+                logMessage: "Индекс не найден",
+            },
+            httpCode: 500
+        },
+
+        'E_SequenceNotFound': {
+            ru: {
+                userMessage: "Сиквенс не найден",
+                logMessage: "Сиквенс не найден",
+            },
+            httpCode: 500
+        },
+
+        'E_ColumnNotFound': {
+            ru: {
+                userMessage: "Колонка не найдена",
+                logMessage: "Колонка не найдена",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidColumnLength': {
+            ru: {
+                userMessage: "Некорректная длина колонки",
+                logMessage: "Некорректная длина колонки",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidNotNullProperty': {
+            ru: {
+                userMessage: "Некорректное значение аттрибута NotNull",
+                logMessage: "Некорректное значение аттрибута NotNull",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidIsBigProperty': {
+            ru: {
+                userMessage: "Некорректное значение аттрибута IsBig",
+                logMessage: "Некорректное значение аттрибута IsBig",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidColumnInfo': {
+            ru: {
+                userMessage: "Некорректное значение аттрибута info",
+                logMessage: "Некорректное значение аттрибута info",
+            },
+            httpCode: 500
+        },
+        
+        'E_InvalidUniqueProperty': {
+            ru: {
+                userMessage: "Некорректное значение аттрибута unique",
+                logMessage: "Некорректное значение аттрибута unique",
+            },
+            httpCode: 500
+        },
+        
+        'E_InvalidIndexedProperty': {
+            ru: {
+                userMessage: "Некорректное значение аттрибута indexed",
+                logMessage: "Некорректное значение аттрибута indexed",
+            },
+            httpCode: 500
+        },
+
+        'E_InvalidHordeRoleProperty': {
+            ru: {
+                userMessage: "Некорректное значение аттрибута hordeRole",
+                logMessage: "Некорректное значение аттрибута hordeRole",
+            },
+            httpCode: 500
+        },
+    
+        'E_UserCatalogError': {
+            ru: {
+                userMessage: "Ошибка при работе с каталогом пользователей",
+                logMessage: "Ошибка при работе с каталогом пользователей",
+            },
+            httpCode: 500
+        },
+    
+        'E_UserAlreadyExists': {
+            ru: {
+                userMessage: "Пользователь с таким логином уже существует",
+                logMessage: "Пользователь с таким логином уже существует",
+            },
+            httpCode: 500
+        },
+
+        'E_UserNotFound': {
+            ru: {
+                userMessage: "Пользователь не найден",
+                logMessage: "Пользователь не найден",
+            },
+            httpCode: 500
+        },
+
+        'E_FileNotFound': {
+            ru: {
+                userMessage: "Файл не найден",
+                logMessage: "Файл не найден",
+            },
+            httpCode: 404
+        },
+
+        'E_AssemblyNotAllowed': {
+            ru: {
+                userMessage: "Данные недоступны для этого приложения",
+                logMessage: "Данные недоступны для этого приложения",
+            },
+            httpCode: 403
+        },
+
+
+    }
+}

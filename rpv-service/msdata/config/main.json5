@@ -1,0 +1,59 @@
+{
+    // Данные о микросервисе для логирования. Работает без перезагрузки микросервиса.
+
+
+    // PROD
+    
+    // serviceName: "rpv-service",
+    // instanceName: "rpv-service-1",
+   
+    // optimaServer: "o24-db",
+    // optimaDatabase: "TB3",
+    // optimaUser: "ms_remid1",
+    // optimaPassword: "8SmaLARyiXZLmBRRsa",
+
+    // absClientUrl: "http://srv81:8080/loanClaimAPI",
+
+    // absCardUrl: "http://srv19.energobank.kg/rsbankws/RSBankWS.asmx?wsdl",
+
+    // smsSenderUrl: "http://srv27:8091/rest/registersms",
+
+    // dbPoolMax: 10
+    
+    
+
+    // TEST
+    
+    config:  {headers: { 'Content-Type': 'application/xml', 'Accept-Encoding' : 'gzip, deflate, br'},
+    proxy:false,
+    withCredentials: false,
+    responseType: 'application/xml',
+    'Connection':'keep-alive',
+    timeout: 5000
+    },
+    serviceName: "TEST.rpv-service",
+    instanceName: "TEST.rpv-service",
+
+    optimaServer: "O24-DEV",
+    optimaDatabase: "TB3DEV",
+    optimaUser: "TB3DEVUSER",
+    optimaPassword: "jkrZKBIpXr1jNJ",
+
+    absClientUrl: "http://srv79:8080/loanClaimAPI",
+    absCardUrl: "https://ho299:8443/client-api-service/getCardNumberByID/",
+
+    smsSenderUrl: "http://10.185.232.46:8011/rest/registersms",
+    dbPoolMax: 10,
+    chiperKey: "c3b21680091f2b1faf540a9baaaad07e",
+    properIssueCount: 5,
+
+    pgConfig:{
+        host: '10.185.233.241',
+        port: '5432',
+        user: 'dan',
+        password: 'dan',
+        database: 'rpv_service',
+        schema: "main",
+    }
+    
+}

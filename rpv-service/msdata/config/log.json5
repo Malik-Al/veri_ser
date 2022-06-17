@@ -1,0 +1,11 @@
+{
+    // Режим логирования, "console", "file", "fluent"
+    logMode: "console",
+
+    // Уровень логирования: "trace", "debug", "info", "warn", "error"
+    logLevel: "debug",
+
+    // Адрес и порт сервера fluentd
+    fluentdHost: "srv08.bank.local",
+    fluentdPort: 24224
+}
